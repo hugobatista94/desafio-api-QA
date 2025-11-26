@@ -1,0 +1,12 @@
+{
+"usuarioValido": {
+"email": "teste@qa.com.br",
+"password": "teste123"
+},
+"novoUsuario": {
+"nome": "Usuário QA Automatizado",
+"email": "autoqa@test.com",
+"password": "123456",
+"administrador": "true"
+}
+}
