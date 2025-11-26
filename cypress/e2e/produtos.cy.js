@@ -1,5 +1,5 @@
 // cypress/e2e/produtos.cy.js
-describe.skip("Produtos - Cenários Críticos", () => {
+describe("Produtos - Cenários Críticos", () => {
   let token;
   const admin = {
     nome: "Admin QA",
@@ -55,7 +55,7 @@ describe.skip("Produtos - Cenários Críticos", () => {
     });
   });
 
-  it.skip("Criar produto com sucesso", () => {
+  it("Criar produto com sucesso", () => {
     // safety check: token definido
     if (!token) {
       throw new Error("Token indefinido no it() - verifique o before()");
@@ -78,7 +78,7 @@ describe.skip("Produtos - Cenários Críticos", () => {
   });
 
 
-  it.skip("Não deve permitir cadastro de produto duplicado", () => {
+  it("Não deve permitir cadastro de produto duplicado", () => {
   const nomeDuplicado = `Produto QA ${Date.now()}`
 
   // 1º cadastro - sucesso

@@ -7,7 +7,7 @@ describe("Carrinhos - Cenários Críticos", () => {
     })
   })
 
-  it.skip("Criar carrinho com sucesso", () => {
+  it("Criar carrinho com sucesso", () => {
     cy.api({
       method: "POST",
       url: "/carrinhos",
@@ -21,7 +21,7 @@ describe("Carrinhos - Cenários Críticos", () => {
     })
   })
 
-  it.skip("Cancelar carrinho", () => {
+  it("Cancelar carrinho", () => {
   cy.api({
     method: "DELETE",
     url: "/carrinhos/cancelar-compra",
